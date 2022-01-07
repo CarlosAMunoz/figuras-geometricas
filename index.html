@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <form> 
+    <form class="contCua"> 
         <label> Ingrese el valor del lado del cuadrado </label>
         <input type="number" id="ladoCuadro"> 
         <input type="button" id="calcular" value="Calcular"> 
+        <div id="resultadoArea">El valor del área es: </div>
+        <div id="resultadoPeri"> El valor del perímetro es: </div>
     </form>
+    <form class="contCTria"> 
+        <label> Ingrese el valor de la base del triángulo </label>
+        <input type="number" id="baseTriangulo"> 
+        <label> Ingrese el valor del la altura del triángulo </label>
+        <input type="number" id="alturaTriangulo"> 
+        <input type="button" id="calcularTri" value="Calcular"> 
+        <div id="resultadoAreaTria">El valor del área es: </div>
+        <div id="resultadoPeriTria"> El valor del perímetro es: </div>
+    </form>
+    <form class="contCirc"> 
+        <label> Ingrese el valor del radio del círculo </label>
+        <input type="number" id="radioCir"> 
+        <input type="button" id="calcularCir" value="Calcular"> 
+        <div id="resultadoAreaCir">El valor del área es: </div>
+        <div id="resultadoPeriCir"> El valor del perímetro es: </div>
+    </form>
+
+
     <script src="./script.js"> </script>
 </body>
 </html>
