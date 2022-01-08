@@ -32,7 +32,7 @@ calcularCir.addEventListener("click", calcularCirculo)
 function calcularCirculo(){
     let radioCirculo = radioCir.value;
     resultadoAreaCir.textContent = `El valor del área es: ${circuloArea(radioCirculo)}`;
-    resultadoPeriCir.textContent = `El calor del perímetro es: ${circuloPeri(radioCirculo)}`
+    resultadoPeriCir.textContent = `El valor del perímetro es: ${circuloPeri(radioCirculo)}`
 }
 
 

@@ -8,31 +8,75 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <form class="contCua"> 
-        <label> Ingrese el valor del lado del cuadrado </label>
-        <input type="number" id="ladoCuadro"> 
-        <input type="button" id="calcular" value="Calcular"> 
-        <div id="resultadoArea">El valor del área es: </div>
-        <div id="resultadoPeri"> El valor del perímetro es: </div>
-    </form>
-    <form class="contCTria"> 
-        <label> Ingrese el valor de la base del triángulo </label>
-        <input type="number" id="baseTriangulo"> 
-        <label> Ingrese el valor del la altura del triángulo </label>
-        <input type="number" id="alturaTriangulo"> 
-        <input type="button" id="calcularTri" value="Calcular"> 
-        <div id="resultadoAreaTria">El valor del área es: </div>
-        <div id="resultadoPeriTria"> El valor del perímetro es: </div>
-    </form>
-    <form class="contCirc"> 
-        <label> Ingrese el valor del radio del círculo </label>
-        <input type="number" id="radioCir"> 
-        <input type="button" id="calcularCir" value="Calcular"> 
-        <div id="resultadoAreaCir">El valor del área es: </div>
-        <div id="resultadoPeriCir"> El valor del perímetro es: </div>
-    </form>
+    <div class="principal">
+        <header>
+            <img class="logo" alt="Logo de la página"> 
+            <a href="#">  Calculador de áreas y perímetros </a>
+            
+        </header>
+        
+        <main> 
+            <section class="explicacion"> 
+                <div> 
+                    <h2>Área y perímetro de un cuadrado </h2>
+                    <p> </p>
+                </div>
+                <div> 
+                    <h2> Área y perímetro de un triángulo </h2>
+                    <p> </p>
+                </div>
+                <div> 
+                    <h2> Área y perímetro de un círculo </h2>
+                    <p> </p>
+                </div>
+            </section>
 
-
+            <section class="formularios"> 
+                <form class="contCua"> 
+                    <div> 
+                        <div class="cuadrado"> </div>
+                        <label > Ingrese el valor correspondiente </label>
+                        <label class="label_p"> Lado: </label>
+                        <input type="number" id="ladoCuadro" class="texto"> 
+                        <input type="button" id="calcular" value="Calcular" class="boton"> 
+                    </div>
+                    <div>
+                        <div id="resultadoArea">El valor del área es: </div>
+                        <div id="resultadoPeri"> El valor del perímetro es: </div>
+                    </div>
+                </form>
+                <form class="contCTria"> 
+                    <div> 
+                        <div class="triangulo"> </div>
+                        <label> Ingrese el valor correspondiente </label>
+                        <label class="label_p"> Base: </label>
+                        <input type="number" id="baseTriangulo" class="texto"> 
+                        <label class="label_p"> Altura: </label>
+                        <input type="number" id="alturaTriangulo" class="texto"> 
+                        <input type="button" id="calcularTri" value="Calcular" class="boton"> 
+                     </div>
+                    <div>
+                        <div id="resultadoAreaTria">El valor del área es: </div>
+                        <div id="resultadoPeriTria"> El valor del perímetro es: </div>
+                    </div>
+                   
+                </form>
+                <form class="contCirc"> 
+                    <div> 
+                    <div class="circulo"> </div>
+                        <label> Ingrese el valor correspondiente</label>
+                        <label class="label_p"> Radio: </label>
+                        <input type="number" id="radioCir" class="texto"> 
+                        <input type="button" id="calcularCir" value="Calcular" class="boton"> 
+                    </div>
+                    <div>
+                        <div id="resultadoAreaCir"> El valor del área es:</div>
+                        <div id="resultadoPeriCir"> El valor del perímetro es:</div>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
     <script src="./script.js"> </script>
 </body>
 </html>

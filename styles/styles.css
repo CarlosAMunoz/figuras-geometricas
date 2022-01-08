@@ -1,6 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
 html{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffffff
+    color: #ffffff;
+}
+
+
+
+header {
+    height: 80px;
+    background-color: #000000;
+}
+
+main{
+    display: flex;
+    background: linear-gradient(to bottom, #6449bd, #291e51);
+}
+
+.explicacion{
+    width: 50%;
+}
+.formularios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
 
 label{
@@ -9,15 +38,46 @@ label{
 }
 
 form{
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 200px;
     margin-top: 40px;
-    border-radius: 10px;
     padding: 10px;
-    background-color: rgb(121, 121, 121);
+    background: linear-gradient(to bottom right, #8459ac, #59387a);
+    box-shadow: -0px -0px 20px rgb(53, 53, 53);
 }
 
-form div{
-    /* border: solid 1px; */
-    width: auto;
+.cuadrado{
+    width: 17px;
+    height: 17px;
+    background-color: #fff;
+}
+
+.circulo{
+    width: 20px;
     height: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.triangulo{
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 20px solid #ffffff;
+}
+
+.texto{
+    width: 100px;
+}
+
+.boton{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+.label_p{
+    display: inline-block;
 }
